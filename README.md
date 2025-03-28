@@ -13,6 +13,8 @@ If you are developing a production application, we recommend updating the config
 
 hello nikita
 
+hello chandan
+
 ```js
 export default tseslint.config({
   extends: [
