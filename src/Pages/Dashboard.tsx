@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell
 } from 'recharts';
@@ -109,7 +109,7 @@ function Dashboard() {
                 // Custom label with percentage
                 >
                   {orderStatusData.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={['#8884d8', '#82ca9d', '#ff8042', '#ff7373'][index % 4]} />
+                    <Cell key={`${entry}-${index}`} fill={['#8884d8', '#82ca9d', '#ff8042', '#ff7373'][index % 4]} />
                   ))}
                 </Pie>
                 <Tooltip />
